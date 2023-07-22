@@ -1,0 +1,1105 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "123",
+  "contained": [
+    {
+      "resourceType": "Observation",
+      "id": "9a1318bd-c0bb-4fc9-babe-7d4f2e93ccde",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "",
+            "version": "",
+            "code": "1004",
+            "display": "LUNG CANCER STAGING"
+          }
+        ]
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "D",
+                "display": ""
+              }
+            ]
+          },
+          "valueQuantity": {
+            "value": 21,
+            "unit": "mm",
+            "system": "D",
+            "code": "mm"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "M",
+                "display": ""
+              }
+            ]
+          },
+          "valueBoolean": true
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.5",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.5.4"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.2.2"
+        }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "49bf2882-4041-46dc-8dd8-b59ac46c4cf5",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "",
+            "version": "",
+            "code": "1006",
+            "display": "PULMONARY NODULE"
+          }
+        ]
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "D",
+                "display": ""
+              }
+            ]
+          },
+          "valueQuantity": {
+            "value": 21,
+            "unit": "mm",
+            "system": "D",
+            "code": "mm"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "M",
+                "display": ""
+              }
+            ]
+          },
+          "valueBoolean": true
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.5",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.5.4"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.2.2"
+        }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "05ca3fb4-4647-4c5b-9c1c-254ffd5903bc",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "",
+            "version": "",
+            "code": "M364",
+            "display": "INCIDENTAL PULMONARY NODULE"
+          }
+        ]
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "D",
+                "display": ""
+              }
+            ]
+          },
+          "valueQuantity": {
+            "value": 21,
+            "unit": "mm",
+            "system": "D",
+            "code": "mm"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "M",
+                "display": ""
+              }
+            ]
+          },
+          "valueBoolean": true
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.5",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.5.4"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.2.2"
+        }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "9cc3488e-19c3-4b49-84e3-560f342b22af",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "",
+            "version": "",
+            "code": "1006",
+            "display": "PULMONARY NODULE"
+          }
+        ]
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "D",
+                "display": ""
+              }
+            ]
+          },
+          "valueQuantity": {
+            "value": 6.8,
+            "unit": "mm",
+            "system": "D",
+            "code": "mm"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "M",
+                "display": ""
+              }
+            ]
+          },
+          "valueBoolean": true
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.3",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.3.8"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.2.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.5",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.5.1"
+        }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "6cc56c3b-0603-4efc-a7d1-7833bda41e37",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "",
+            "version": "",
+            "code": "M364",
+            "display": "INCIDENTAL PULMONARY NODULE"
+          }
+        ]
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "D",
+                "display": ""
+              }
+            ]
+          },
+          "valueQuantity": {
+            "value": 6.8,
+            "unit": "mm",
+            "system": "D",
+            "code": "mm"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "M",
+                "display": ""
+              }
+            ]
+          },
+          "valueBoolean": true
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.3",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.3.8"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.2.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.5",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.5.1"
+        }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "9e2bba77-a82e-4681-8f8d-e10b13372fba",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "",
+            "version": "",
+            "code": "1004",
+            "display": "LUNG CANCER STAGING"
+          }
+        ]
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "D",
+                "display": ""
+              }
+            ]
+          },
+          "valueQuantity": {
+            "value": 21.4,
+            "unit": "mm",
+            "system": "D",
+            "code": "mm"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "M",
+                "display": ""
+              }
+            ]
+          },
+          "valueBoolean": true
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1004.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1004.2.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1004.3",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1004.3.1"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.3",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.3.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.2.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.5",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.5.1"
+        }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "f6d5aa49-862c-41de-b654-509319ce4c64",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "",
+            "version": "",
+            "code": "1006",
+            "display": "PULMONARY NODULE"
+          }
+        ]
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "D",
+                "display": ""
+              }
+            ]
+          },
+          "valueQuantity": {
+            "value": 21.4,
+            "unit": "mm",
+            "system": "D",
+            "code": "mm"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "M",
+                "display": ""
+              }
+            ]
+          },
+          "valueBoolean": true
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1004.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1004.2.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1004.3",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1004.3.1"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.3",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.3.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.2.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.5",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.5.1"
+        }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "669599ad-3cbf-40e3-9636-2c2194167315",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "",
+            "version": "",
+            "code": "M364",
+            "display": "INCIDENTAL PULMONARY NODULE"
+          }
+        ]
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "D",
+                "display": ""
+              }
+            ]
+          },
+          "valueQuantity": {
+            "value": 21.4,
+            "unit": "mm",
+            "system": "D",
+            "code": "mm"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "M",
+                "display": ""
+              }
+            ]
+          },
+          "valueBoolean": true
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1004.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1004.2.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1004.3",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1004.3.1"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.3",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.3.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.2.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.5",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.5.1"
+        }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "43c6c04f-ee01-41c1-8773-2fedd9902e2e",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "",
+            "version": "",
+            "code": "1006",
+            "display": "PULMONARY NODULE"
+          }
+        ]
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "D",
+                "display": ""
+              }
+            ]
+          },
+          "valueQuantity": {
+            "value": 3.1,
+            "unit": "mm",
+            "system": "D",
+            "code": "mm"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "M",
+                "display": ""
+              }
+            ]
+          },
+          "valueBoolean": true
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.3",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.3.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.2.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.5",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.5.2"
+        }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "aaf1d9d3-5e59-4eb5-a609-c850f1112a4c",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "",
+            "version": "",
+            "code": "M364",
+            "display": "INCIDENTAL PULMONARY NODULE"
+          }
+        ]
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "D",
+                "display": ""
+              }
+            ]
+          },
+          "valueQuantity": {
+            "value": 3.1,
+            "unit": "mm",
+            "system": "D",
+            "code": "mm"
+          }
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "M",
+                "display": ""
+              }
+            ]
+          },
+          "valueBoolean": true
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.3",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.3.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.2.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.5",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.5.2"
+        }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "8244bb3b-7df9-484b-8393-ab1f4ef3b3a0",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "",
+            "version": "",
+            "code": "1006",
+            "display": "PULMONARY NODULE"
+          }
+        ]
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "M",
+                "display": ""
+              }
+            ]
+          },
+          "valueBoolean": true
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.3",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.3.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.2.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.5",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.5.1"
+        }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "b30836a6-d825-4cab-ad5a-b9a8858cdc2c",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "",
+            "version": "",
+            "code": "M364",
+            "display": "INCIDENTAL PULMONARY NODULE"
+          }
+        ]
+      },
+      "component": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "M",
+                "display": ""
+              }
+            ]
+          },
+          "valueBoolean": true
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.3",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.3.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.2",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.2.2"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "SAF",
+                "version": "",
+                "code": "1006.5",
+                "display": ""
+              }
+            ]
+          },
+          "valueString": "1006.5.1"
+        }
+      ]
+    }
+  ],
+  "status": "registered",
+  "effectiveDateTime": "0001-01-01T00:00:00+00:00",
+  "result": [
+    {
+      "reference": "#9a1318bd-c0bb-4fc9-babe-7d4f2e93ccde",
+      "type": "Observation"
+    },
+    {
+      "reference": "#49bf2882-4041-46dc-8dd8-b59ac46c4cf5",
+      "type": "Observation"
+    },
+    {
+      "reference": "#05ca3fb4-4647-4c5b-9c1c-254ffd5903bc",
+      "type": "Observation"
+    },
+    {
+      "reference": "#9cc3488e-19c3-4b49-84e3-560f342b22af",
+      "type": "Observation"
+    },
+    {
+      "reference": "#6cc56c3b-0603-4efc-a7d1-7833bda41e37",
+      "type": "Observation"
+    },
+    {
+      "reference": "#9e2bba77-a82e-4681-8f8d-e10b13372fba",
+      "type": "Observation"
+    },
+    {
+      "reference": "#f6d5aa49-862c-41de-b654-509319ce4c64",
+      "type": "Observation"
+    },
+    {
+      "reference": "#669599ad-3cbf-40e3-9636-2c2194167315",
+      "type": "Observation"
+    },
+    {
+      "reference": "#43c6c04f-ee01-41c1-8773-2fedd9902e2e",
+      "type": "Observation"
+    },
+    {
+      "reference": "#aaf1d9d3-5e59-4eb5-a609-c850f1112a4c",
+      "type": "Observation"
+    },
+    {
+      "reference": "#8244bb3b-7df9-484b-8393-ab1f4ef3b3a0",
+      "type": "Observation"
+    },
+    {
+      "reference": "#b30836a6-d825-4cab-ad5a-b9a8858cdc2c",
+      "type": "Observation"
+    }
+  ]
+}

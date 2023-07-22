@@ -1,0 +1,294 @@
+{
+    "resourceType": "Observation",
+    "id": "observation-example",
+	"identifier": [
+		{
+		"type": {
+			"coding": [
+				{
+				"system": "http://hl7.org/fhir/uv/dicom-sr/CodeSystem/dicom-identifier-type",
+				"code": "observation-uid",
+				"display": "Observation UID"
+				}
+			]
+		},
+		"system": "urn:dicom:uid",
+		"value": "urn:oid:2.25.293638943492893970490299793280.5.9.114"
+		}
+	],
+    "basedOn": {
+        "reference": "ServiceRequest/20140722E607399"
+    },
+    "status": "final",
+    "code": {
+        "system": "http://radelement.org",
+        "code":"RDES195",
+        "display":"Pulmonary Nodule"
+    },
+    "subject": {
+        "reference": "Patient/944",
+		"display": "John Jones"
+    },
+	"focus": [
+		{
+		"bodyStructure": [
+			{
+			"identifier":
+				{
+				"type": {
+					"coding": [
+						{
+						"system": "http://hl7.org/fhir/uv/dicom-sr/CodeSystem/dicom-identifier-type",
+						"code": "tracking-uid",
+						"display": "Tracking UID"
+						}
+					]
+				},
+				"system": "urn:dicom:uid",
+				"value": "urn:oid:2.25.293638943492893970490299793280.5.9.114.1"
+				},
+			"includedStructure": {
+				"structure": {
+					"valueCodeableConcept": {
+						"coding": [
+							{
+							"system": "http://radlex.org",
+							"code": "RID50149",
+							"display": "pulmonary nodule"
+							}
+						]
+					}
+				}
+			}
+			}
+		]
+		},
+		{
+		"imagingSelection": [
+			{
+			"identifier":
+				{
+				"type": {
+					"coding": [
+						{
+						"system": "http://hl7.org/fhir/uv/dicom-sr/CodeSystem/dicom-identifier-type",
+						"code": "tracking-uid",
+						"display": "Tracking UID"
+						}
+					]
+				},
+				"system": "urn:dicom:uid",
+				"value": "urn:oid:2.25.293638943492893970490299793280.5.9.114.1"
+				},
+			"status": "unknown",
+			"code": {
+				"text": "Region selected from image"
+			},
+			"studyUid": "2.25.2936389434928939704902997932800313744.1",
+			"seriesUid": "1.2.840.113747.20080222.324856729726954657132726086516575.1",
+			"instance": [
+				{
+				"uid": "1.2.840.113747.20080222.324856729726823100132726086516575.1.0"
+				},
+				"imageRegion": [
+					{
+					"regionType": "interpolated",
+					"coordinate": [0.50,0.50,0.45,0.45,0.20,0.20,0.25,0.25,0.0,0.25,0.50,0.50]
+					}
+				]	
+			]
+			}
+		]
+		}
+	],
+	"issued": "2022-02-07T13:28:17.239+02:00",
+	"performer": {
+		"reference": "Practitioner/56",
+		"display": "Mary Smith, M.D."
+	},
+    "device": {
+        "reference": "Device/911",
+		"display": "AI Nodule Detector"
+    },
+    "derivedFrom": {
+        "imagingStudy": {
+            "identifier": {
+                "system": "urn:dicom:uid",
+                "value": "urn:oid:2.25.2936389434928939704902997932800313744.1"
+            },              
+            "status": "unknown",
+            "subject": {
+                "reference": "Patient/944",
+				"display": "John Jones"
+            },
+            "endpointAddress": "https://pacs.org/wado-rs"
+        }
+    },
+    "component": [
+        {
+        "code": {
+            "coding": [
+                {
+                "system": "http://radelement.org", 
+                "code": "RDE1300",
+                "display": "Presence"
+                }
+            ]
+        },
+        "valueCodeableConcept": {
+            "coding": [
+                {
+                "system": "http://radelement.org",
+                "code": "RDE1300.0",
+                "display": "present"
+                },
+				{
+				"system": "https://gamuts.net",
+				"code": "32687",
+				"display": "pulmonary mass"
+				},
+				{
+				"system": "http://radlex.org",
+				"code": "RID50149",
+				"display": "pulmonary nodule"
+				}				
+            ],
+			"text": "Pulmonary nodule present"
+		}
+        },
+        {
+        "code": {
+            "coding": [
+                {
+                "system": "http://radelement.org",
+                "code": "RDE1301",
+                "display": "Composition"
+                }
+            ]
+        },
+        "valueCodeableConcept": {
+            "coding": [
+                {
+                "system": "http://radelement.org",
+                "code": "RDE1301.1",
+                "display": "ground glass"
+                }			
+            ],
+			"text": "The nodule has a ground glass composition"
+		}
+        },
+        {
+        "code": {
+            "coding": [
+                {
+                "system": "http://radelement.org",
+                "code": "RDE1302",
+                "display": "Size in mm"
+                }
+            ]
+        },
+        "valueString": "4.5"
+        },
+        {
+        "code": {
+            "coding": [
+                {
+                "system": "http://radelement.org",
+                "code": "RDE1303",
+                "display": "Solid component size in mm"
+                }
+            ]
+        },
+        "valueString": "3.5"
+        },
+        {
+        "code": {
+            "coding": [
+                {
+                "system": "http://radelement.org",
+                "code": "RDE1304",
+                "display": "Location"
+                }
+            ]
+        },
+        "valueCodeableConcept": {
+            "coding": [
+                {
+                "system": "http://radelement.org",
+                "code": "RDE1304.9",
+                "display": "right lower lobe"
+                },
+				{
+				"system": "https://www.anatomiclocations.org",
+				"code": "RID1315",
+				"display": "lower lobe of right lung"
+				}				
+            ],
+			"text": "The nodule is located in the right lower lobe"
+		}
+        },
+        {
+        "code": {
+            "coding": [
+                {
+                "system": "http://radelement.org",
+                "code": "RDE1305",
+                "display": "Morphology"
+                }
+            ]
+        },
+        "valueCodeableConcept": {
+            "coding": [
+                {
+                "system": "http://radelement.org",
+                "code": "RDE1305.3",
+                "display": "spiculated"
+                }			
+            ],
+			"text": "The nodule has a spiculated pattern"
+		}
+        },
+		{
+        "code": {
+            "coding": [
+                {
+                "system": "http://radelement.org",
+                "code": "RDE1306",
+                "display": "Plurality"
+                }
+            ]
+        },
+        "valueCodeableConcept": {
+            "coding": [
+                {
+                "system": "http://radelement.org",
+                "code": "RDE1306.0",
+                "display": "single"
+                }			
+            ],
+			"text": "There is a single nodule"
+		}
+        },
+        {
+        "code": {
+            "coding": [
+                {
+                "system": "http://radelement.org",
+                "code": "RDE1307",
+                "display": "Microcystic component"
+                }
+            ]
+        },
+        "valueCodeableConcept": {
+            "coding": [
+                {
+                "system": "http://radelement.org",
+                "code": "RDE1307.1",
+                "display": "absent"
+                }			
+            ],
+			"text": "The nodule does not contain a microcystic component"
+		}
+        }
+    ]
+}

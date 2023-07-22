@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../Schema/ReportingAppDefinitionFormat.rnc" type="application/relax-ng-compact-syntax"?>
+<ReportingModule> <!-- Or FormDataElementDefinition DataElementTransform -->
+    <Metadata>
+    <!-- Usual metadata  -->
+    <!-- TODO: include something about the CDE Sets we're going to reference -->
+    </Metadata>
+    <DataElements>
+        <!-- Global data element defintions -->
+        <GlobalValue Id="smallSize">10</GlobalValue>
+        <GlobalValue Id="mediumSize">20</GlobalValue>
+        <GlobalValue Id="largeSize">40</GlobalValue>
+        <GlobalValue Id="minimumEnhancementDelta">10</GlobalValue>
+        <GlobalValue Id="lowDensityThreshold">10</GlobalValue>
+
+        <!-- Input data elements from the external data model (CDEs); pulled from data context if available -->
+        <NumericInputDataElement Id="inSizeInCm">
+            <ExternalDataElement CodingSystem="RadElement" Code="RDE41">Size (cm)</ExternalDataElement>
+        </NumericInputDataElement>
+
+        <TextInputDataElement Id="inMacroscopicFat">
+            <ExternalDataElement CodingSystem="RadElement" Code="RDE48">Macroscropic Fat (True/False)</ExternalDataElement>
+        </TextInputDataElement>
+
+        <TextInputDataElement Id="inUniformlyCystic">
+            <ExternalDataElement CodingSystem="RadElement" Code="RDE49">Uniformly Cystic (True/False)</ExternalDataElement>
+        </TextInputDataElement>
+
+        <!-- Unfortunately, not present in RadElement yet -->
+        <TextInputDataElement Id="inBenignCalcification">
+            <ExternalDataElement CodingSystem="RadElement" Code="RDE00000">Benign calcification (True/False)</ExternalDataElement>
+        </TextInputDataElement>
+
+        <!-- Unfortunately, not present in RadElement yet -->
+        <TextInputDataElement Id="inEnhancement">
+            <ExternalDataElement CodingSystem="RadElement" Code="RDE00000">Enhancement (True/False)</ExternalDataElement>
+        </TextInputDataElement>
+
+        <NumericInputDataElement Id="inUnenhancedAttenuation">
+            <ExternalDataElement CodingSystem="RadElement" Code="RDE43">Unenhanced attenuation (HU)</ExternalDataElement>
+        </NumericInputDataElement>
+
+        <!-- Unfortunately, not present in RadElement yet -->
+        <NumericInputDataElement Id="inEnhancedAttenuation">
+            <ExternalDataElement CodingSystem="RadElement" Code="RDE00000">Enhanced attenuation (HU)</ExternalDataElement>
+        </NumericInputDataElement>
+
+        <TextInputDataElement Id="inSide">
+            <ExternalDataElement CodingSystem="RadElement" Code="RDE42">Side (Right/Left)</ExternalDataElement>
+        </TextInputDataElement>
+
+        <NumericInputDataElement Id="inSeries">
+            <ExternalDataElement CodingSystem="DICOM" Code="113607">Series number</ExternalDataElement>
+        </NumericInputDataElement>
+
+        <NumericInputDataElement Id="InImage">
+            <ExternalDataElement CodingSystem="DICOM" Code="113609">Image (Instance) number</ExternalDataElement>
+        </NumericInputDataElement>
+        <!-- ... -->
+
+        <!-- Regular data elements; the internal data model -->
+
+        <!-- Numeric data elements initialized with the value of a single input data element -->
+        <IntegerDataElement Id="series">
+            <Label>Series</Label>
+            <Hint>Image series the finding is best seen on</Hint>
+            <InitialValue Editable="true">
+                <ArithmeticExpression>inSeries</ArithmeticExpression>
+            </InitialValue>
+        </IntegerDataElement>
+        
+        <IntegerDataElement Id="image">
+            <Label>Image</Label>
+            <Hint>The image number within the series the finding is best seen on</Hint>
+            <InitialValue Editable="true">
+                <ArithmeticExpression>inImage</ArithmeticExpression>
+            </InitialValue>
+        </IntegerDataElement>
+ 
+        <!-- Numeric data element based on a simple arithmetic transform of a single input data element -->
+        <NumericDataElement Id="diameter" IsRequired="true">
+            <Label>Size (mm)</Label>
+            <Hint>Size of the lesion in mm</Hint>
+            <InitialValue Editable="true">
+                <ArithmeticExpression>inSizeinCm * 10</ArithmeticExpression>
+            </InitialValue>
+        </NumericDataElement>
+
+        <!-- Choice data element based on a simple text transform of a single input data element -->
+        <ChoiceDataElement Id="side" IsRequired="true">
+            <Label>Side</Label>
+            <Hint>Laterality of the lesion</Hint>
+            <ChoiceInfo>
+                <Choice>
+                    <Value>left</Value>
+                    <Label>Left</Label>
+                    <ReportText>left</ReportText>
+                </Choice>
+                <Choice>
+                    <Value>right</Value>
+                    <Label>Right</Label>
+                    <ReportText>right</ReportText>
+                </Choice>
+            </ChoiceInfo>
+            <InitialValue Editable="true">
+                <DecisionPoint>
+                    <Branch>
+                        <EqualCondition DataElementId="inSide" ComparisonValue="Left"/>
+                        <TextExpression>left</TextExpression>
+                    </Branch>
+                    <Branch>
+                        <EqualCondition DataElementId="inSide" ComparisonValue="Right"/>
+                        <TextExpression>right</TextExpression>
+                    </Branch>
+                </DecisionPoint>
+            </InitialValue>
+        </ChoiceDataElement>
+
+        <IntegerDataElement Id="unenhancedDensity">
+            <Label>Unenhanced Density (HU)</Label>
+            <InitialValue Editable="true">
+                <ArithmeticExpression>inUnenhancedAttenuation</ArithmeticExpression>
+            </InitialValue>
+        </IntegerDataElement>
+
+        <IntegerDataElement Id="enhancedDensity">
+            <Label>Enhanced Density (HU)</Label>
+            <InitialValue Editable="true">
+                <ArithmeticExpression>inEnhancedAttenuation</ArithmeticExpression>
+            </InitialValue>
+        </IntegerDataElement>
+
+        <ComputedDataElement Id="enhancementThreshold">
+            <ArithmeticExpression>unenhancedDensity + minimumEnhancementDelta</ArithmeticExpression>
+        </ComputedDataElement>
+
+        <!-- Choice data element based on a complex transform of multiple input data elements -->
+        <ChoiceDataElement Id="benignFeatures">
+            <Label>Benign features?</Label>
+            <Hint>Benign imaging features include homogeneous, low density and smooth margins</Hint>
+            <ChoiceInfo>
+                <Choice>
+                    <Value>benignCalcified</Value>
+                    <Label>Calcification (old hematoma/granulomatous)</Label>
+                    <ReportText>benign calcification</ReportText>
+                </Choice>
+                <Choice>
+                    <Value>lowAttenuation</Value>
+                    <Label>Density ≤ 10 HU on unenhanced CT</Label>
+                    <ReportText>low CT density (≤10 HU)</ReportText>
+                </Choice>
+                <Choice>
+                    <Value>macroscopicFat</Value>
+                    <Label>Macroscopic fat</Label>
+                    <ReportText>macroscopic fat</ReportText>
+                </Choice>
+                <Choice>
+                    <Value>noEnhancement</Value>
+                    <Label>No enhancement (&lt;10 HU)</Label>
+                    <ReportText>no enhancement</ReportText>
+                </Choice>
+                <!-- ... -->
+            </ChoiceInfo>
+            <InitialValue>
+                <DecisionPoint Editable="true">
+                    <Branch>
+                        <EqualCondition DataElementId="inMacroscopicFat" ComparisonValue="True"/>
+                        <TextExpression>macroscopicFat</TextExpression>
+                    </Branch>
+                    <Branch>
+                        <EqualCondition DataElementId="inBenignCalcification" ComparisonValue="True"/>
+                        <TextExpression>benignCalcified</TextExpression>
+                    </Branch>
+                    <Branch>
+                        <OrCondition>
+                            <LessThanCondition DataElementId="unEnhancedDensity" ComparisonValue="lowDensityThreshold"/>
+                            <LessThanCondition DataElementId="enhancedDensity" ComparisonValue="lowDensityThreshold"/>
+                        </OrCondition>
+                        <TextExpression>lowAttenuation</TextExpression>
+                    </Branch>
+                    <Branch>
+                        <EqualCondition DataElementId="inEnhancement" ComparisonValue="False"/>
+                        <TextExpression>noEnhancement</TextExpression>
+                    </Branch>
+                    <Branch>
+                        <LessThanCondition DataElementId="enhancedDensity" ComparisonValue="enhancementThreshold"/>
+                        <TextExpression>noEnhancement</TextExpression>
+                    </Branch>
+                </DecisionPoint>
+            </InitialValue>
+        </ChoiceDataElement>
+
+        <!-- Output data model -->
+        <OutputDataElement>
+            <ExternalDataElement CodingSystem="DICOM" Code="113607">Series number</ExternalDataElement>
+            <ArithmeticExpression>series</ArithmeticExpression>
+        </OutputDataElement>
+
+        <OutputDataElement>
+            <ExternalDataElement CodingSystem="DICOM" Code="113609">Image (Instance) number</ExternalDataElement>
+            <ArithmeticExpression>image</ArithmeticExpression>
+        </OutputDataElement>
+
+        <OutputDataElement>
+            <ExternalDataElement CodingSystem="RadElement" Code="RDE41">Size (cm)</ExternalDataElement>
+            <ArithmeticExpression>diameter / 10</ArithmeticExpression>
+        </OutputDataElement>
+    
+        <OutputDataElement>
+            <ExternalDataElement CodingSystem="RadElement" Code="RDE42">Side (Right/Left)</ExternalDataElement>
+            <DecisionPoint>
+                <Branch>
+                    <EqualCondition DataElementId="side" ComparisonValue="left"/>
+                    <TextExpression>Left</TextExpression>
+                </Branch>
+                <Branch>
+                    <EqualCondition DataElementId="side" ComparisonValue="right"/>
+                    <TextExpression>Right</TextExpression>
+                </Branch>
+            </DecisionPoint>
+        </OutputDataElement>
+
+        <OutputDataElement>
+            <ExternalDataElement CodingSystem="RadElement" Code="RDE48">Macroscropic Fat (True/False)</ExternalDataElement>
+            <DecisionPoint>
+                <Branch>
+                    <EqualCondition DataElementId="benignFeatures" ComparisonValue="macroscopicFat"/>
+                    <TextExpression>True</TextExpression>
+                </Branch>
+            </DecisionPoint>
+        </OutputDataElement>
+
+        <OutputDataElement>
+            <ExternalDataElement CodingSystem="RadElement" Code="RDE43">Unenhanced attenuation (HU)</ExternalDataElement>
+            <ArithmeticExpression>unenhancedDensity</ArithmeticExpression>
+        </OutputDataElement>
+
+        <OutputDataElement>
+            <ExternalDataElement CodingSystem="RadElement" Code="RDE00000">Enhanced attenuation (HU)</ExternalDataElement>
+            <ArithmeticExpression>enhancedDensity</ArithmeticExpression>
+        </OutputDataElement>
+
+        <OutputDataElement>
+            <ExternalDataElement CodingSystem="RadElement" Code="RDE00000">Enhancement (True/False)</ExternalDataElement>
+            <DecisionPoint>
+                <Branch>
+                    <EqualCondition DataElementId="benignFeatures" ComparisonValue="noEnhancement"/>
+                    <TextExpression>False</TextExpression>
+                </Branch>
+                <Branch>
+                    <GreaterThanCondition DataElementId="enhancedDensity" ComparisonValue="enhancementThreshold"/>
+                    <TextExpression>True</TextExpression>
+                </Branch>
+            </DecisionPoint>
+        </OutputDataElement>
+    </DataElements>
+
+    <!-- Rest of the reporting module here -->
+</ReportingModule>

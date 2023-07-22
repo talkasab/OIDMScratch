@@ -1,0 +1,55 @@
+{
+    "resourceType": "Observation",
+    "id": "example",
+    "code": {
+        "system": "https://radelement.org",
+        "code":"RDES47"
+    },
+    "component": [
+        {
+        "code": {
+            "coding": [
+                {
+                "code": "RDE256"
+                }
+            ]
+        },
+        "valueCodeableConcept": {
+            "coding": [
+                {
+                "code": "RDE256.2"
+                }
+            ]
+        },
+        {
+        "code": {
+            "coding": [
+                {
+                "code": "RDE257"
+                }
+            ]
+        },
+        "valueCodeableConcept": {
+            "coding": [
+                {
+                "code": "RDE257.2"
+                }
+            ]
+        },
+		{
+        "code": {
+            "coding": [
+                {
+                "code": "RDE258"
+                }
+            ]
+        },
+        "valueCodeableConcept": {
+            "coding": [
+                {
+                "code": "RDE258.1"
+                }
+            ]
+        }
+    ]
+}

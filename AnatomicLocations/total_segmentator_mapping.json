@@ -1,0 +1,120 @@
+spleen RID86 5159
+kidney_right RID29662
+kidney_left RID29663
+gallbladder RID187
+liver RID58
+stomach RID114
+aorta RID480
+inferior_vena_cava RID1178
+portal_vein_and_splenic_vein RID1208
+pancreas RID170
+adrenal_gland RID88 3874
+adrenal_gland_right RID30324
+adrenal_gland_left RID30325
+lung_upper_lobe_left RID1327 3300
+lung_lower_lobe_left RID1328 3308
+lung_upper_lobe_right RID1303 3284
+lung_middle_lobe_right RID1310 3289
+lung_lower_lobe_right RID1315 3293
+vertebrae_L5 RID29127
+vertebrae_L4 RID29196
+vertebrae_L3 RID29195
+vertebrae_L2 RID29194
+vertebrae_L1 RID29193
+vertebrae_T12 RID29209
+vertebrae_T11 RID29208
+vertebrae_T10 RID29207
+vertebrae_T9 RID29206
+vertebrae_T8 RID29205
+vertebrae_T7 RID29204
+vertebrae_T6 RID29203
+vertebrae_T5 RID29202
+vertebrae_T4 RID29201
+vertebrae_T3 RID29200
+vertebrae_T2 RID29199
+vertebrae_T1 RID29198
+vertebrae_C7 RID29163 1057
+vertebrae_C6 RID29162 1055
+vertebrae_C5 RID29224
+vertebrae_C4 RID29161
+vertebrae_C3 RID29160
+vertebrae_C2 RID7747 1050
+vertebrae_C1 RID7745 1038
+esophagus RID95
+trachea RID1247
+heart_myocardium 
+heart_atrium_left RID1390
+heart_ventricle_left RID1392
+heart_atrium_right RID1387
+heart_ventricle_right RID1389
+pulmonary_artery RID974
+brain RID6434
+iliac_artery_left RID944_RID5824
+iliac_artery_right RID944_RID5825
+iliac_vena_left RID1193_RID5824
+iliac_vena_right RID1193_RID5825
+small_bowel RID132
+duodenum RID134
+colon RID152
+rib_left_1 ||
+rib_left_2 ||
+rib_left_3 ||
+rib_left_4 ||
+rib_left_5 ||
+rib_left_6 ||
+rib_left_7 ||
+rib_left_8 ||
+rib_left_9 ||
+rib_left_10 ||
+rib_left_11 ||
+rib_left_12 ||
+rib_right_1 ||
+rib_right_2 ||
+rib_right_3 ||
+rib_right_4 ||
+rib_right_5 ||
+rib_right_6 ||
+rib_right_7 ||
+rib_right_8 ||
+rib_right_9 ||
+rib_right_10 ||
+rib_right_11 ||
+rib_right_12 ||
+scapula_left ||
+scapula_right ||
+clavicula_left | clavicle |
+clavicula_right | clavicle |
+hip_left | hip bone |
+hip_right | hip bone |
+sacrum ||
+face ||
+gluteus_maximus_left | gluteus maximus muscle |
+gluteus_maximus_right | gluteus maximus muscle |
+gluteus_medius_left | gluteus medius muscle |
+gluteus_medius_right | gluteus medius muscle |
+gluteus_minimus_left | gluteus minimus muscle |
+gluteus_minimus_right | gluteus minimus muscle |
+autochthon_left ||
+autochthon_right ||
+iliopsoas_left | iliopsoas muscle |
+iliopsoas_right | iliopsoas muscle |
+urinary_bladder ||
+femur ||
+patella ||
+tibia ||
+fibula ||
+tarsal ||
+metatarsal ||
+phalanges_feet ||
+humerus ||
+ulna ||
+radius ||
+carpal ||
+metacarpal ||
+phalanges_hand ||
+sternum ||
+skull ||
+subcutaneous_fat ||
+skeletal_muscle ||
+torso_fat ||
+spinal_cord ||
