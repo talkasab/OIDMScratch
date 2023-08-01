@@ -1,0 +1,259 @@
+[
+    {
+        "exam": {
+            "exam_type": "chest ct",
+            "exam_date": "2017-12-01",
+            "exam_id": "12348568812",
+            "exam_description": "Chest CT"
+        },
+        "report_text": "PORTS AND DEVICES: None.
+        LUNGS: There is mild biapical scarring, similar to the previous
+        exam. There is mild subsegmental atelectasis within the dependent
+        portion of the lung bases as well as atelectasis adjacent to
+        thoracic osteophytes medially within the right lower lobe.
+        PULMONARY NODULES ARE AS FOLLOWS:
+        1 mm nodule along the right major fissure (2:34).
+        3 mm right middle lobe nodule (2:39).
+        5 mm nodule medial aspect superior segment right lower lobe
+        (2:40).
+        5 mm left lower lobe subpleural nodule (2:51).
+        5 mm left lower lobe subpleural nodule (2:59).
+        2 mm right lower lobe nodule (2:58).
+        1 mm left lower lobe nodule (2:66).
+        Calcified granuloma left lower lobe (2:70).
+        6 mm right lower lobe nodule (2:70).
+        No new or enlarging pulmonary nodules.
+        PLEURA: No pleural effusion.
+        LYMPH NODES: No enlarged supraclavicular, axillary, mediastinal
+        or hilar lymph nodes.
+        MEDIASTINUM: The ascending thoracic aorta measures 3.5 x 3.7 cm
+        in transverse dimension. The pulmonary arteries are ectatic. Mild
+        coronary artery calcifications. No pericardial effusion.
+        Chest Wall / BREASTS: Left chest wall pacing device with leads in
+        the right atrium and right ventricle.
+        UPPER ABDOMEN: Imaged portions of the liver and spleen are
+        grossly unremarkable. The adrenal glands are normal in size and
+        configuration. There is diverticular disease of the colon.
+        MUSCULOSKELETAL: Mild dextroscoliosis of the thoracic spine.
+        Moderate T10 compression fracture. There are multilevel
+        degenerative changes of the thoracic spine.",
+        "observations": [
+            {
+                "finding": "pulmonary apical scarring",
+                "attributes": {
+                    "location": "bilateral",
+                    "severity": "mild",
+                    "change_from_prior": "unchanged"
+                }    
+            },
+            {
+                "finding": "calcified granuloma",
+                "attributes": {
+                    "location": "left lower lobe"
+                }
+            },
+            {
+                "finding": "coronary artery calcifications",
+                "attributes": {
+                    "severity": "mild"
+                }
+            },
+            {
+                "finding": "thoracic spine scoliosis",
+                "attributes": {
+                    "alignment": "dextroscoliosis",
+                    "severity": "mild"
+                }
+            },
+            {
+                "finding": "thoracic spine compression fracture",
+                "attributes": {
+                    "location": "T10",
+                    "severity": "moderate"
+                }
+            },
+            {
+                "finding": "thoracic spine degenerative change",
+                "attributes": {
+                    "location": "multilevel"
+                }
+            }
+
+        ]
+    },
+    {
+        "exam": {
+            "exam_type": "chest ct",
+            "exam_date": "2017-04-01",
+            "exam_id": "1234828133",
+            "exam_description": "Chest CT"
+        },
+        "report_text": "Mild biapical scar appear similar. Mild bibasilar subsegmental
+        scar or atelectasis again seen.
+        PULMONARY NODULES ARE AS FOLLOWS:
+        Stable 2 mm nodule along the right major fissure (35:3).
+        Stable 3 mm right middle lobe nodule (42:3).
+        Stable 5 mm nodule medial aspect superior segment right lower
+        lobe (40:3).
+        Stable 5 mm left lower lobe subpleural nodule (47:3).
+        Stable 5 mm left lower lobe subpleural nodule (56:3).
+        Stable 2 mm right lower lobe nodule (55:3).
+        Stable 1 mm left lower lobe nodule (66:3).
+        Stable calcified granuloma left lower lobe (70:3).
+        Stable 6 mm right lower lobe nodule (68:3).
+        No pleural effusion.
+        No mediastinal lymphadenopathy. No pericardial effusion.
+        Atherosclerotic calcifications in the thoracic aorta and branch
+        vessels. Coronary artery calcifications. Small hiatal hernia.
+        No adrenal masses.
+        No axillary adenopathy.
+        Moderate T10 vertebral body compression fracture again seen.
+        Moderate degenerative changes in the thoracic spine. Mild
+        dextroscoliosis in the thoracic spine.",
+        "observations": [
+            {
+                "finding": "pulmonary apical scarring",
+                "attributes": {
+                    "location": "bilateral",
+                    "severity": "mild",
+                    "change_from_prior": "unchanged"
+                }    
+            },
+            {
+                "finding": "calcified granuloma",
+                "attributes": {
+                    "location": "left lower lobe",
+                    "change_from_prior": "stable"
+                }
+            },
+            {
+                "finding": "coronary artery calcifications",
+                "attributes": {
+                    "presence": "present"
+                }
+            },
+            {
+                "finding": "thoracic vascular calcifications",
+                "attributes": {
+                    "structures": ["thoracic aorta and branch vessels"]
+                }
+            },
+            {
+                "finding": "hiatal hernia",
+                "attributes": {
+                    "size": "small"
+                }
+            },
+            {
+                "finding": "thoracic spine scoliosis",
+                "attributes": {
+                    "alignment": "dextroscoliosis",
+                    "severity": "mild"
+                }
+            },
+            {
+                "finding": "thoracic spine compression fracture",
+                "attributes": {
+                    "location": "T10",
+                    "severity": "moderate"
+                }
+            },
+            {
+                "finding": "thoracic spine degenerative change",
+                "attributes": {
+                    "location": "multilevel"
+                }
+            }
+        ]
+    },
+    {
+        "exam": {
+            "exam_type": "chest ct",
+            "exam_date": "2016-04-01",
+            "exam_id": "1234567890",
+            "exam_description": "Chest CT"
+        },
+        "report_text": "There is mild biapical scarring, similar to the previous exam.
+        There is mild subsegmental atelectasis within the dependent
+        portion of the lung bases as well as atelectasis adjacent to
+        thoracic osteophytes medially within the right lower lobe.
+        PULMONARY NODULES ARE AS FOLLOWS:
+        2 mm nodule along the right major fissure (3:37), stable.
+        3 mm nodule within the right middle lobe (3:43), stable.
+        5 mm nodule medially within the superior segment of the right
+        lower lobe (3:43), previously 4 mm.
+        5 mm left lower lobe subpleural (3:51), previously measured 4 mm.
+        5 mm left lower lobe subpleural (3:59), previously measured 3 mm.
+        2 mm right lower lobe (3:59), not previously seen.
+        1 mm left lower lobe (3:68), stable.
+        Left lower lobe calcified granuloma (3:71), stable.
+        6 mm right lower lobe (3:72), stable.
+        There is no pleural effusion or pleural thickening.
+        The thyroid gland is unremarkable. There are no enlarged
+        mediastinal, hilar, or axillary lymph nodes. The heart is normal
+        in size. There are coronary artery atherosclerotic
+        calcifications. The aorta and main pulmonary artery are normal in
+        caliber. There is atherosclerotic calcification of the aortic
+        arch and descending thoracic aorta. There is a small hiatal
+        hernia.
+        The breast parenchyma is unremarkable.
+        The visualized structures of the upper abdomen are unremarkable.
+        There is mild dextroscoliosis of the thoracic spine. There is a
+        moderate T10 compression fracture. There are multilevel
+        degenerative changes of the thoracic spine.",
+        "observations": [
+            {
+                "finding": "pulmonary apical scarring",
+                "attributes": {
+                    "location": "bilateral",
+                    "change_from_prior": "unchanged"
+                }    
+            },
+            {
+                "finding": "calcified granuloma",
+                "attributes": {
+                    "location": "left lower lobe",
+                    "change_from_prior": "stable"
+                }
+            },
+            {
+                "finding": "coronary artery calcifications",
+                "attributes": {
+                    "presence": "present"
+                }
+            },
+            {
+                "finding": "thoracic vascular calcifications",
+                "attributes": {
+                    "structures": ["aortic arch", "descending aorta"]
+                }
+            },
+            {
+                "finding": "hiatal hernia",
+                "attributes": {
+                    "size": "small"
+                }
+            },
+            {
+                "finding": "thoracic spine scoliosis",
+                "attributes": {
+                    "alignment": "dextroscoliosis",
+                    "severity": "mild"
+                }
+            },
+            {
+                "finding": "thoracic spine compression fracture",
+                "attributes": {
+                    "location": "T10",
+                    "severity": "moderate"
+                }
+            },
+            {
+                "finding": "thoracic spine degenerative change",
+                "attributes": {
+                    "location": "multilevel"
+                }
+            }
+        ]
+    }
+]
